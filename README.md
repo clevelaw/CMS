@@ -1,6 +1,8 @@
 # Course Management API
 
-This Flask-based API is a full-stack application designed for managing courses, users, and enrollments. The app is meant to be hosed on Google App Engine and integrates with Google Cloud Datastore for data storage, Google Cloud Storage for managing user avatars, and Auth0 for secure JWT-based authentication. Testing of the API was done using Postman for validating all endpoints.
+This Flask-based API was done as a final project for a Cloud Development course. It is designed for managing courses, users, and enrollments with permissions based on the users role. The app is hosted on Google App Engine and integrates with Google Cloud Datastore for data storage, Google Cloud Storage for managing user avatars, and Auth0 for secure JWT-based authentication. Testing of the API was done using Postman for validating all endpoints.
+
+All endpoints are protected and require a valid JWT in the request as a bearer token in the authorization header. Users have one of three roles: admin, instructor, or student, with each role having a different set of permissions to perform API actions. User login functionality is handled via Auth0.
 
 ## Features
 
